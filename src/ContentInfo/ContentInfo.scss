@@ -1,0 +1,58 @@
+.container {
+    max-width: 730px;
+    margin: 0px auto;
+}
+.monitor_riser{
+    //border: 1px solid;
+    border-radius : 10px;
+    height: 270px;
+    position: relative;
+    top: -85px;
+    background-color: #ffffff;
+    p{
+        margin:25px 2px;
+        color:gray;
+        font-size:17px;
+    }
+}
+.logo{
+    position: relative;
+    top:-29px;
+}
+.monitor_select{
+    display:flex;
+    align-items:center;
+    justify-content:space-evenly;
+    margin:0px auto;
+    button{
+        width: 200px;
+        height:57px;
+        border-radius: 7em 7em ;
+        background-color:#3db3ac;
+        outline:none;
+        border:none;
+        color: #fff;
+        font-size: 17px;
+    }
+
+}
+.bookmark{
+    display:flex;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: #fafafa;
+    width: 190px;
+    height: 55px;
+    border-radius: 6em 6em;
+    span{
+        margin-left: -5px;
+        margin-right: 25px;
+    }
+
+    p{
+        font-size: 17px;
+        font-weight: 700;
+        color:rgba(0, 0, 0, 0.63);
+        padding-bottom: 5px;
+    }
+}

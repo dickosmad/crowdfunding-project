@@ -1,0 +1,24 @@
+nav{
+    color:white;
+}
+.nav_header{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  margin:0px 165px;
+
+}
+.logo h2{
+    margin-top:48px
+}
+.nav__items{
+    display:flex;
+    align-items:center;
+    justify-content:space-around;
+    gap:2em;
+    li{
+        font-weight: bold;
+        list-style: none;
+        margin-top:48px
+    }
+}
