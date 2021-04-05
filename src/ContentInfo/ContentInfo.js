@@ -24,18 +24,25 @@ export default function ContentInfo() {
           </div>
         </div>
       </div>
-      <div className="monitor_riser_progress">
-        <div className="amount">
-          <p>$89,914</p>
-          <p>of $100,000 backed</p>
+      <div className="donation_board">
+        <div className="monitor_riser_progress">
+          <div className="amount">
+            <h1>$89,914</h1>
+            <p>of $100,000 backed</p>
+          </div>
+          <div className="amount">
+            <h1>5,007</h1>
+            <p>total backers</p>
+          </div>
+          <div className="amount">
+            <h1>56</h1>
+            <p>days left</p>
+          </div>
         </div>
-        <div className="amount">
-          <p>$5,007</p>
-          <p>total backers</p>
-        </div>
-        <div className="amount">
-          <p>56</p>
-          <p>days left</p>
+        <div className="progress_container">
+          <div className="progress_bar">
+            <div className="progress_gauge"></div>
+          </div>
         </div>
       </div>
     </div>

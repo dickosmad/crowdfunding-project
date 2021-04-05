@@ -13,7 +13,7 @@ export default function Menu() {
         }}
       >
         <div className="nav_header">
-          <div className="logo">
+          <div className="logo_menu">
             <h2>crowdfund</h2>
           </div>
           <ul className="nav__items">

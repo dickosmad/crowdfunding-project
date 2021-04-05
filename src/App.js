@@ -1,4 +1,4 @@
-import "./App.css";
+import "./App.scss";
 import ContentInfo from "./ContentInfo/ContentInfo";
 import Menu from "./Menu/Menu";
 
