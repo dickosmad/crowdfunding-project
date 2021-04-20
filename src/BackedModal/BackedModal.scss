@@ -1,0 +1,170 @@
+$secondary_color : #3db3ac;
+
+.modal {
+    position: absolute;
+    top: 180px;
+    left: 520px;
+    max-width: 730px;
+    max-height: 900px;
+    border-radius: 10px;
+    background-color: #ffffff;
+    padding: 25px;
+    text-align: left;
+
+    &__title {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    svg {
+        opacity: .5;
+
+        &:hover {
+            opacity: 1;
+            cursor: pointer;
+        }
+    }
+
+}
+
+/* Hide the browser's default radio button */
+.modal__card {
+    margin: 25px 15px 45px 1px;
+    padding: 15px;
+    text-align: left;
+    border: 1px solid rgba(128, 128, 128, 0.486);
+    border-radius: 10px;
+
+    &__title {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;  
+
+    }
+    &__select__input {
+        display: flex;
+        align-items: center;
+        gap: 2em;
+        position: relative;
+        label{
+            cursor: pointer; 
+            font-size: 19px;
+            font-weight: bold;
+        }
+        p{
+            color:$secondary_color;
+            font-weight: 700;
+        }
+
+    }
+    .checkbox{
+        position: absolute;
+        left:-1000px;
+    }
+    .checkmark{
+        &::before {
+            content:'';
+            width: 20px;
+            height: 20px;
+            border: 1px solid gray;
+            border-radius: 100%;
+            position: relative;
+            cursor: pointer;
+            display: inline-flex;
+            vertical-align: bottom;
+            margin-right: 10px;
+        }
+    
+            &::after {
+                content: '';
+                background: #00bcd4;
+                height: 10px;
+                width: 10px;
+                position: absolute;
+                left: 6px;
+                top: 6px;
+                border-radius: 100%;
+                transition: transform .5s ease-in-out;
+                transform: scale(0);
+    
+            }
+        
+    }
+
+    .checkbox:checked + .checkmark:after {
+        transform: scale(1)
+    }
+    label:hover {
+        color: $secondary_color;
+    }
+
+    .modal__card__pledge__left {
+        font-size: 1.5em;
+        font-weight: bold;
+
+        span {
+            font-size: 15px;
+            color: rgba(128, 128, 128, 0.438);
+            vertical-align: middle;
+        }
+    }
+}
+
+.modal__card__pledge__value {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.modal__card__plegde__reward {
+    position: relative;
+    &:hover{
+        color: $secondary_color;
+    }
+    span i{
+        position: absolute;
+        top: 16px;
+        left: 38px;
+        font-size: 17px;
+        color:rgba(128, 128, 128, 0.575);
+        font-weight: bolder;
+    }
+    input {
+        width: 90px;
+        padding: 15px;
+        border-radius: 2em;
+        outline:none;
+        border: 1px solid $secondary_color;
+        border-width: 1px;
+        border-color: $secondary_color;
+        margin-right: 10px;
+        
+    }
+    input[type="text"]{
+        font-size: 17px;
+        font-weight: bold;
+        text-align: center;
+    }
+
+
+    button {
+        width: 110px;
+        height: 57px;
+        border-radius: 3em 3em;
+        background-color: $secondary_color;
+        outline: none;
+        border: none;
+        color: #fff;
+        font-size: 17px;
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+
+    button:disabled {
+        background-color: gray
+    }
+
+
+}

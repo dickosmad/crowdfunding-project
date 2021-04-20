@@ -34,6 +34,9 @@ $secondary_color : #3db3ac;
         border:none;
         color: #fff;
         font-size: 17px;
+        &:hover{
+            cursor: pointer;
+        }
     }
 
 }
@@ -104,6 +107,7 @@ $secondary_color : #3db3ac;
     border-radius : 10px;
     background-color: #ffffff; 
     padding: 1px;
+    margin: 35px 0px;
 }
 .title{
    display: flex;

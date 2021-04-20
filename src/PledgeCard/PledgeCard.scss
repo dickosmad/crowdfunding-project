@@ -54,10 +54,21 @@ $secondary_color : #3db3ac;
     border:none;
     color: #fff;
     font-size: 17px;
+    &:hover{
+        cursor: pointer;
+    }
     }
     button:disabled{
         background-color:gray
     }
     
     
+}
+.modal__component{
+    background: #80808061;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 290%;
+    height: 290%;
 }
